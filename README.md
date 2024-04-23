@@ -1,9 +1,5 @@
 # Linux
 
-```
-For any Linux command you can check the usage and different input flags it expects by runnig the command followed by `--help`
-```
-
 ## Note:
 
 For any Linux command you can check the usage and different input flags it expects by runnig the command followed by `--help`
@@ -56,3 +52,69 @@ For any Linux command you can check the usage and different input flags it expec
 - `rmdir <folder name>` : this command deletes a empty folder.
 
 - `rm -r <folder name>` : the `-r` flag enables `rm` to recursively delete all the content of the folder and than delete the folder. 
+
+## Vim
+
+- `vim <file name>` : this will create a file (if it doesn't exist) and then open it in the vim editor in normal mode. In normal mode we can not do changes to the file but we can read it and navigate it. You can also do `vi <file name>` to do same things.
+
+- Now after opening vim if want to start making changes you need to, first of all, make it change the mode from `normal` to `insert` mode. To go into the insert mode we can press `i`. If you want to come back to `normal` mode then press `Esc` key.
+
+- `esc + :q` : if you want to exit a file we can do this.
+
+- `esc + :q!` : if file has some changes and we want to exit without saving changes.
+
+- `esc + :wq` : if file has changes and we want to save it and then exit.
+
+- `l` : in normal mode, you can move the cursor right.
+
+- `h` : in normal mode, you can move the cursor left.
+
+- `j` : in normal mode, you can move the cursor down.
+
+- `k` : in normal mode, you can move the cursor up.
+
+- You can use normal right, left, up, down arrow keys as well to nevigate.
+
+- `dd` : in normal mode, it will delete the line the cursor is currently at.
+
+- `gg` : in normal mode, it will make cursor go on the first line.
+
+- `G` : in normal mode, it will make cursor go on the last line.
+
+- `w` : in normal mode, it will make you jump one word.
+
+- `2w` : in normal mode, it will make you jump two words.
+
+- `d2w` : then this will delete two words.
+
+- `esc + :s/foo/bar` : in normal mode, To search for the occurrence of the string `foo` in the current line and replace it with `bar`.
+
+- `esc + :%s/foo/bar` : in normal mode, to replace all occurrences of `foo` with `bar`.
+
+- `yw` : in normal mode, it copies one word.
+
+- `yy` : in normal mode, it copies a whole line.
+
+- `p` : for pasting in normal mode.
+
+- ### Vim config file
+
+  - `vim ~/.vimrc` : this command open vim config file, set these values.
+
+  ```
+    :syntax on
+
+    set number
+
+    set autoindent
+
+    filetype plugin indent on
+
+    set tabstop=4 softtabstop=4
+
+    set shiftwidth=4
+
+    colorscheme murphy
+
+    :se mouse+=a
+  ```
