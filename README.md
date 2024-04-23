@@ -101,6 +101,7 @@ For any Linux command you can check the usage and different input flags it expec
 
   - `vim ~/.vimrc` : this command open vim config file, set these values.
 
+
   ```
     :syntax on
 
@@ -118,3 +119,7 @@ For any Linux command you can check the usage and different input flags it expec
 
     :se mouse+=a
   ```
+
+- `tail -n 2 <file name>` : Prints last 2 lines of "file", useful for checking recent entries.
+
+- `head -n 2 data.txt` : Displays first 2 lines of "file", ideal for quick file previews.
