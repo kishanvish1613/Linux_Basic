@@ -1,5 +1,9 @@
 # Linux
 
+```
+For any Linux command you can check the usage and different input flags it expects by runnig the command followed by `--help`
+```
+
 ## Note:
 
 For any Linux command you can check the usage and different input flags it expects by runnig the command followed by `--help`
@@ -123,3 +127,29 @@ For any Linux command you can check the usage and different input flags it expec
 - `tail -n 2 <file name>` : Prints last 2 lines of "file", useful for checking recent entries.
 
 - `head -n 2 data.txt` : Displays first 2 lines of "file", ideal for quick file previews.
+
+## Pipe Operator
+
+- `ls | grep <file/folder>` : this will actually pass the output of `ls` as an input to `grep`, grep does a substring search of "file/folder" on the output of ls.   
+
+- `ps aux` : lists all running processes with detailed information about each process.
+
+- `ps aux | grep mysql` : displays processes, filters for those related to MySQL server, showing details.
+
+## Commands
+
+- `ls > <file name>` : whatever is the result of `ls` will be dumped into 'file name', nothing will be printed on the console. if 'file' has some content already then that will be `replaced`.
+
+- `pwd >> <file name>` : whatever is the result of `ls` will be dumped into 'file name', nothing will be printed on the console. if 'file' has some content already then the new content will be `appended`.
+
+- `cp <file name> <file name>` : Copies contents of one file into another, and delete previous content.
+
+- `mv <file 1> <location of second file>` : moves (cut paste) the `file 1` to a new position as `second file`. This can also help us to rename a file.
+
+  - ### Zip
+
+    - `tar -cf <name of zip file.zip> <file1> <file2>` : This command zips all mentioned files into the specified zip file.
+
+    - `tar -zcf <name of zip file.zip> <file1> <file2>` : Creates a ` compressed ` zip file containing specified files.
+
+    - `tar xf <name of zip file.zip> -C <name of already present folder>` : Extracts contents of a zip file into a specified existing folder.
