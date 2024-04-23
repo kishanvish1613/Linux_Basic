@@ -1,9 +1,5 @@
 # Linux
 
-```
-For any Linux command you can check the usage and different input flags it expects by runnig the command followed by `--help`
-```
-
 ## Note:
 
 For any Linux command you can check the usage and different input flags it expects by runnig the command followed by `--help`
